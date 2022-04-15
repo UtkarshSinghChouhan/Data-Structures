@@ -6,14 +6,18 @@ class Graph
 private:
     int numNode;
     vector<int> *adjList;
-    void dfsRec(int node, vector<int> &vis, vector<int> &storeDfs);
+    void dfsUtilis(int node, vector<int> &vis, vector<int> adjList[], vector<int> &storeDfs);
 
 public:
-    Graph(int numNode);//
-    void addEdge(int src, int des);//
-    vector<int> bfsOfGraph();//
+    Graph(int numNode);
+
+    void addEdge(int src, int des);
+
+    vector<int> bfsOfGraph();
+
     vector<int> dfsOfGraph();
-    void print();//
+
+    void print();
 };
 
 
@@ -80,6 +84,36 @@ vector<int> Graph :: bfsOfGraph()
     return storeBfs;
 }
 
+void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> adjList[], vector<int> &storeDfs)
+{    
+    storeDfs.push_back(node);
+    vis[node] = 1;
+
+    for(int value : adjList[node])
+    {
+        if(vis[value] == 0)
+        {
+            dfsUtilis(node,  vis, adjList, storeDfs);
+        }
+    }
+}
+
+
+vector<int> Graph :: dfsOfGraph()
+{
+    vector<int> storeDfs;
+    vector<int> vis(numNode + 1, 0);
+
+    for(int i = 1; i <= numNode; i++)
+    {
+        if(vis[i] == 0)
+        {
+            dfsUtilis(i, vis, adjList, storeDfs);
+        }
+    }
+
+    return storeDfs;
+}
 
 
 
@@ -97,7 +131,9 @@ int main()
     //Component C2 of the graph
     g.addEdge(4,6);
 
+
     g.print();
+    
 
     //Printing the Bfs of the graph.
     for(int value : g.bfsOfGraph())
@@ -105,6 +141,15 @@ int main()
         cout << value << " ";
     }
     cout<<endl;
+
+
+    //Printing the Dfs of the graph.
+    for(int value : g.dfsOfGraph())
+    {
+        cout << value << " ";
+    }
+    cout<<endl;
+
 
     return 0;
 }
