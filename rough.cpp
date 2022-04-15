@@ -6,7 +6,7 @@ class Graph
 private:
     int numNode;
     vector<int> *adjList;
-    void dfsUtilis(int node, vector<int> &vis, vector<int> adjList[], vector<int> &storeDfs);
+    void dfsUtilis(int node, vector<int> &vis, vector<int> &storeDfs);
 
 public:
     Graph(int numNode);
@@ -84,7 +84,7 @@ vector<int> Graph :: bfsOfGraph()
     return storeBfs;
 }
 
-void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> adjList[], vector<int> &storeDfs)
+void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> &storeDfs)
 {    
     storeDfs.push_back(node);
     vis[node] = 1;
@@ -92,8 +92,8 @@ void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> adjList[], vecto
     for(int value : adjList[node])
     {
         if(vis[value] == 0)
-        {
-            dfsUtilis(node,  vis, adjList, storeDfs);
+        {        
+            dfsUtilis(value,  vis, storeDfs);
         }
     }
 }
@@ -108,7 +108,7 @@ vector<int> Graph :: dfsOfGraph()
     {
         if(vis[i] == 0)
         {
-            dfsUtilis(i, vis, adjList, storeDfs);
+            dfsUtilis(i, vis, storeDfs);
         }
     }
 
@@ -133,7 +133,7 @@ int main()
 
 
     g.print();
-    
+
 
     //Printing the Bfs of the graph.
     for(int value : g.bfsOfGraph())
