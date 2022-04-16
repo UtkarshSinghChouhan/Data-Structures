@@ -35,11 +35,9 @@ bool Graph :: checkCycleUtils(int node, vector<int> &vis, vector<int> adjList[])
     queue<pair<int,int>> q;
     q.push({node, -1});
     vis[node] = 1;
-        // cout<<"Cat"<<endl;
 
     while (q.empty() == false)
     {
-        // cout<<"Cat"<<endl;
         int curr = q.front().first;
         int pre = q.front().second;
 
@@ -67,11 +65,9 @@ bool Graph :: checkCycleUtils(int node, vector<int> &vis, vector<int> adjList[])
 bool Graph :: checkCycle()
 {
     vector<int> vis(numNode + 1, 0);
-        // cout<<"Cat"<<endl;
 
     for(int i = 1; i <= numNode; i++)
     {
-        // cout<<"Cat"<<endl;
         if(vis[i] == 0)
         {
             if(checkCycleUtils(i, vis, adjList) == true)
