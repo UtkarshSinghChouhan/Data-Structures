@@ -213,15 +213,17 @@ vector<int> Graph :: bfsOfGraph()
 
 void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> &storeDfs)
 {    
+    if(vis[value] == 0)
+    {
+        return;
+    }
+
     storeDfs.push_back(node);
     vis[node] = 1;
 
     for(int value : adjList[node])
-    {
-        if(vis[value] == 0)
-        {        
+    {       
             dfsUtilis(value,  vis, storeDfs);
-        }
     }
 }
 
