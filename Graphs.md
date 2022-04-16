@@ -213,14 +213,17 @@ vector<int> Graph :: bfsOfGraph()
 
 void Graph :: dfsUtilis(int node, vector<int> &vis, vector<int> &storeDfs)
 {    
+    //Base Condition
     if(vis[value] == 0)
     {
         return;
     }
 
+    // Induction step
     storeDfs.push_back(node);
     vis[node] = 1;
 
+    //Hypothesis(call for smaller input)
     for(int value : adjList[node])
     {       
             dfsUtilis(value,  vis, storeDfs);
