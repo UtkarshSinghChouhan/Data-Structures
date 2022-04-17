@@ -2,6 +2,7 @@
 <a href = "#02">Question 02 - Cycle Detection in Undirected graph (using DFS)</a> <br>
 <a href = "#03">Question 03 - Bipartite Detection in Undirected graph (using DFS)</a> <br>
 <a href = "#04">Question 04 - Cycle Detection in Directed graph (using DFS)</a> <br>
+<a href = "#05">Question 05 - Topological Sort (only possible in Directed Acyclic Graph)</a> <br>
 
 <h2 id = "01">Question 01 - Cycle Detection in Undirected graph (using BFS)</h2>
 
@@ -439,4 +440,10 @@ int main()
 
     return 0;
 }
+```
+
+<h2 id = "05">Question 05 - TopoLogical Sort (only possible in Directed Acyclic Graph)</h2>
+
+```cpp
+![alt Directed_Acyclic_Graph]()
 ```
