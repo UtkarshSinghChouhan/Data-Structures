@@ -1,6 +1,7 @@
 <a href = "#01">Question 01 - Cycle Detection in Undirected graph (using BFS)</a> <br>
 <a href = "#02">Question 02 - Cycle Detection in Undirected graph (using DFS)</a> <br>
 <a href = "#03">Question 03 - Bipartite Detection in Undirected graph (using DFS)</a> <br>
+<a href = "#04">Question 04 - Cycle Detection in Directed graph (using DFS)</a> <br>
 
 <h2 id = "01">Question 01 - Cycle Detection in Undirected graph (using BFS)</h2>
 
@@ -358,6 +359,82 @@ int main()
 
     else{
         cout<<"The Graph is not Bipartite"<<endl;
+    }
+
+    return 0;
+}
+```
+<h2 id = "04">Question 04 - Cycle Detection in Directed graph (using DFS)</h2>
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+bool checkCycleDfs(int node, vector<int> &vis, vector<int> &dfsVis, vector<int> adjList[])
+{
+    vis[node] = 1;
+    dfsVis[node] = 1;
+
+    for(int adjNode : adjList[node])
+    {
+        if(vis[adjNode] == 0){
+            if(checkCycleDfs(adjNode, vis, dfsVis, adjList) == true){
+                return true;
+            }
+        }
+
+        else if(dfsVis[adjNode] == 1){
+            return true;
+        }
+    }
+
+    dfsVis[node] = 0;
+    return false;
+}
+
+bool checkCycle(vector<int> adjList[], int numNodes)
+{
+    vector<int> vis(numNodes + 1, 0);
+    vector<int> dfsVis(numNodes + 1, 0);
+
+    for(int i = 1; i <= numNodes; i++)
+    {
+        if(vis[i] == 0)
+        {
+            if(checkCycleDfs(i, vis, dfsVis, adjList) == true){
+                return true;
+            }            
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    int n, m;       //n - no. of vertices
+    cin >> n >> m;  //m - no. of edges
+
+    //declaring the adjacency list
+    vector<int> adjList[n+1];
+
+    //taking edges as input and storing it in the adjacency list
+    for(int i = 0; i<m; i++)
+    {
+        int u, v;            //u and v represents the end vertices of any edge
+        cin >> u >> v;
+
+        adjList[u].push_back(v);
+    }
+
+    
+    //Calling the checkCycle function for the garph(adjacency List)
+    if(checkCycle(adjList, n))
+    {
+        cout<<"The Graph contains a Cycle"<<endl;
+    }
+
+    else{
+        cout<<"The Graph  does not contains a Cycle"<<endl;
     }
 
     return 0;
