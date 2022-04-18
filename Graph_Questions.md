@@ -6,7 +6,7 @@
 
 <h2 id = "01">Question 01 - Cycle Detection in Undirected graph (using BFS)</h2>
 
-![alt Directed_Acyclic_Graph](./Images/Question-01.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-01.png)
 
 ```cpp
 #include<bits/stdc++.h>
@@ -150,8 +150,8 @@ int main()
 
 <h2 id = "02">Question 02 - Cycle Detection in Undirected graph (using DFS)</h2>
 
-![alt Directed_Acyclic_Graph](./Images/Question-2.1.png)
-![alt Directed_Acyclic_Graph](./Images/Question-2.2.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-2.1.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-2.2.png)
 
 ```cpp
 #include<bits/stdc++.h>
@@ -286,9 +286,9 @@ int main()
 
 <h2 id = "03">Question 03 - Bipartite Detection in Undirected graph (using DFS)</h2>
 
-![alt Directed_Acyclic_Graph](./Images/Question-03.png)
-![alt Directed_Acyclic_Graph](./Images/Question-3.1.png)
-![alt Directed_Acyclic_Graph](./Images/Question-3.2.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-03.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-3.1.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-3.2.png)
 
 ```cpp
 #include<bits/stdc++.h>
@@ -375,7 +375,7 @@ int main()
 ```
 <h2 id = "04">Question 04 - Cycle Detection in Directed graph (using DFS)</h2>
 
-![alt Directed_Acyclic_Graph](./Images/Question-4.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-4.png)
 
 ```cpp
 #include<bits/stdc++.h>
@@ -454,7 +454,7 @@ int main()
 
 <h2 id = "05">Question 05 - TopoLogical Sort (only possible in Directed Acyclic Graph)</h2>
 
-![alt Directed_Acyclic_Graph](./Images/Question-05.png)
+![alt Directed_Acyclic_Graph](./Images/Graphs_Images/Question-05.png)
 
 ```cpp
 
