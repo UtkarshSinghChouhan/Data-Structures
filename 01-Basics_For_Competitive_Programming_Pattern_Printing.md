@@ -11,7 +11,7 @@
 
 <h2 id = "01">Program-01</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-01.png)
 
 ```cpp
 //Using For-Loop.
@@ -55,7 +55,7 @@ int main()
 
 <h2 id = "02">Program-02</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-02.png)
 
 ```cpp
 //Using the For-Loop
@@ -113,7 +113,7 @@ int main()
 
 <h2 id = "03">Program-03</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-03.png)
 
 ```cpp
 //Using For-Loop
@@ -158,7 +158,7 @@ int main()
 ```
 <h2 id = "04">Program-04</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-04.png)
 
 ```cpp
 //Using the For-Loop
@@ -216,7 +216,7 @@ int main()
 
 <h2 id = "05">Program-05</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-05.png)
 
 ```cpp
 //Using the For-Loop
@@ -229,7 +229,7 @@ int main()
     {
         for(int j = 0; j < i+1; j++)
         {
-            cout << (i+1);
+            cout << (i+1) << " ";
         }
 
         cout << endl;
@@ -261,7 +261,7 @@ int main()
 
 <h2 id = "06">Program-06</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-06.png)
 
 ```cpp
 //Using For-Loop.
@@ -312,7 +312,7 @@ int main()
 
 <h2 id = "07">Program-07</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-07.png)
 
 ```cpp
 //Using For-Loop.
@@ -359,7 +359,7 @@ int main()
 
 <h2 id = "08">Program-08</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-08.png)
 
 ```cpp
 //Using For-Loop
@@ -408,7 +408,7 @@ int main()
 
 <h2 id = "09">Program-09</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-09.png)
 
 ```cpp
 //Using For-Loop.
@@ -438,9 +438,9 @@ int main()
 
 ```
 
-<h2 id = "09">Program-09</h2>
+<h2 id = "10">Program-10</h2>
 
-![alt text](http://url/to/img.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-10.png)
 
 ```cpp
 //Using For-Loop.
