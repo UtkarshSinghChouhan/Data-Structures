@@ -435,7 +435,35 @@ int main()
     return 0;
 }
 
+//Using The While-Loop.
+#include<iostream>
+using namespace std;
 
+int main()
+{
+    int i = 0;
+    while (i < 5)
+    {
+        int  j = 0;
+        while (j < 5)
+        {
+            if(j < 5-(i+1)){
+                cout << " ";
+            }
+
+            else{
+                cout << "*" <<" ";
+            }
+
+            j++;
+        }
+        
+        i++;
+        cout << endl;
+    }
+    
+    return 0;
+}
 ```
 
 <h2 id = "10">Program-10</h2>
@@ -444,7 +472,27 @@ int main()
 
 ```cpp
 //Using For-Loop.
+#include<iostream>
+using namespace std;
 
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            if(j < i){
+                cout << " ";
+            }
+
+            else{
+                cout << "*" << " ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
 
 //Using While-Loop.
 #include<iostream>
@@ -459,7 +507,7 @@ int main()
         while (j < 5)
         {
             if(j >= i){
-                cout << "* ";
+                cout << "*" << " ";
             }
 
             else{
