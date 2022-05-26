@@ -3,9 +3,11 @@ using namespace std;
 
 int main()
 {
-    for(int i = 0; i < 5; i++)
+    int i = 0;
+    while(i < 5)
     {
-        for(int j = 0; j <= (4-i); j++)
+        int j = 0;
+        while(j <= (4-i))
         {
             if(i == 0 || i == 4)
             {
@@ -22,7 +24,10 @@ int main()
                     cout << "  ";
                 }
             }
+
+            j++;
         }
+        i++;
         cout << endl;
     }
     return 0;

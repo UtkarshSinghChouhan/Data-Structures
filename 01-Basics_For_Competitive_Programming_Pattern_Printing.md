@@ -526,6 +526,8 @@ int main()
 ```
 <h2 id = "11">Program-11</h2>
 
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-11.png)
+
 ```cpp
 
 //Using For-Loop
@@ -568,6 +570,8 @@ int main()
 }
 ```
 <h2 id = "12">Program-12</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-12.png)
 
 ```cpp
 // Using For-Loop
@@ -638,4 +642,77 @@ int main()
     return 0;
 }
 
+```
+
+<h2 id = "12">Program-12</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-13.png)
+
+```cpp
+// USing For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j <= (4-i); j++)
+        {
+            if(i == 0 || i == 4)
+            {
+                cout << "* ";
+            }
+
+            else{
+                if(j == 0 || j == (4-i))
+                {
+                    cout << "* ";
+                }
+
+                else{
+                    cout << "  ";
+                }
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    while(i < 5)
+    {
+        int j = 0;
+        while(j <= (4-i))
+        {
+            if(i == 0 || i == 4)
+            {
+                cout << "* ";
+            }
+
+            else{
+                if(j == 0 || j == (4-i))
+                {
+                    cout << "* ";
+                }
+
+                else{
+                    cout << "  ";
+                }
+            }
+
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
 ```
