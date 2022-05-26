@@ -3,31 +3,33 @@ using namespace std;
 
 int main()
 {
-    int i = 0;
-    while(i < 5)
+    for(int i = 0; i < 5; i++)
     {
-        int j = 0;
-        while(j <= (4-i))
+        for(int j = 0; j < 5; j++)
         {
-            if(i == 0 || i == 4)
+            if()
             {
-                cout << "* ";
+
             }
 
             else{
-                if(j == 0 || j == (4-i))
+
+                if(i == 0 || i == 4)
                 {
-                    cout << "* ";
+                    cout << "*" <<" ";
                 }
 
                 else{
-                    cout << "  ";
+                    if(){
+
+                    }
+
+                    else{
+
+                    }
                 }
             }
-
-            j++;
         }
-        i++;
         cout << endl;
     }
     return 0;

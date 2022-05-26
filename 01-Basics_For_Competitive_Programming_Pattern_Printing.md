@@ -10,6 +10,7 @@
 <a href = "#10">Program-10</a> <br>
 <a href = "#11">Program-11</a> <br>
 <a href = "#12">Program-12</a> <br>
+<a href = "#13">Program-13</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -644,7 +645,7 @@ int main()
 
 ```
 
-<h2 id = "12">Program-12</h2>
+<h2 id = "13">Program-13</h2>
 
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-13.png)
 
