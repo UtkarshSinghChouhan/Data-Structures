@@ -5,25 +5,24 @@ int main()
 {
     for(int i = 0; i < 5; i++)
     {
-        for(int  j = 0; j < 5; j++ )
+        for(int j = 0; j <= (4-i); j++)
         {
             if(i == 0 || i == 4)
             {
-                cout << "* ";       //one space is provided after each character print.
+                cout << "* ";
             }
 
             else{
-                if(j == 0 || j == 4)
+                if(j == 0 || j == (4-i))
                 {
-                    cout << "* ";     //one space is provided after each character print.
+                    cout << "* ";
                 }
 
                 else{
-                    cout << "  ";   //two spaces are provided here (Similar to above situation where one space is provided after each character print)
+                    cout << "  ";
                 }
             }
         }
-
         cout << endl;
     }
     return 0;

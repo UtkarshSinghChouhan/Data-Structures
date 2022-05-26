@@ -9,6 +9,7 @@
 <a href = "#09">Program-09</a> <br>
 <a href = "#10">Program-10</a> <br>
 <a href = "#11">Program-11</a> <br>
+<a href = "#12">Program-12</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -565,4 +566,76 @@ int main()
     }
     return 0;
 }
+```
+<h2 id = "12">Program-12</h2>
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int  j = 0; j < 5; j++ )
+        {
+            if(i == 0 || i == 4)
+            {
+                cout << "* ";       //one space is provided after each character print.
+            }
+
+            else{
+                if(j == 0 || j == 4)
+                {
+                    cout << "* ";     //one space is provided after each character print.
+                }
+
+                else{
+                    cout << "  ";   //two spaces are provided here (Similar to above situation where one space is provided after each character print)
+                }
+            }
+        }
+
+        cout << endl;
+    }
+    return 0;
+}
+
+//Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    while(i < 5)
+    {
+        int  j = 0;
+        while(j < 5) 
+        {
+            if(i == 0 || i == 4)
+            {
+                cout << "* ";
+            }
+
+            else{
+                if(j == 0 || j == 4)
+                {
+                    cout << "* ";
+                }
+
+                else{
+                    cout << "  ";
+                }
+            }
+            j++;             
+        }
+
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+
 ```
