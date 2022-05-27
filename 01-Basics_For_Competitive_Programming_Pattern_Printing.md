@@ -13,6 +13,9 @@
 <a href = "#13">Program-13</a> <br>
 <a href = "#14">Program-14</a> <br>
 <a href = "#15">Program-15</a> <br>
+<a href = "#16">Program-16</a> <br>
+<a href = "#17">Program-17</a> <br>
+<a href = "#18">Program-18</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -884,6 +887,163 @@ int main()
         while(j < (5-i))
         {
             cout << (j+1) << " ";
+            j++;
+        }
+        i++;
+        cout <<endl;
+    }
+    return 0;
+}
+```
+<h2 id = "17">Program-17</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-17.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-17.1.png)
+
+```cpp
+// Using the For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 9; j++)
+        {
+            if(j < 5 && i == 4)     //For printing the Last Line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == 0  && i != 4)          //For printing the First Characters.
+            {
+                cout << (j+1);
+            }
+
+            else if(j == (2*i) && i > 0 && i != 4 )       //For printing the Last Characters.
+            {
+                cout << (i+1);
+            }
+
+            else{
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    while(i < 5)
+    {
+        int  j = 0;
+        while(j < 9)
+        {
+            if(j < 5 && i == 4)        //For Printing the last line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == 0 && i != 4)           //For Printing the first characters only. 
+            {
+                cout << (j+1);
+            }
+
+            else if(j == (2*i) && i > 0 && i != 4)       //For Printing the last characters only.
+            {
+                cout << (i+1);
+            }
+
+            else{
+                cout << " ";
+            }
+            j++;
+        }
+        i++;
+        cout <<endl;
+    }
+    return 0;
+}
+```
+<h2 id = "18">Program-18</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-18.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-18.1.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 9; j++)
+        {
+            if(i == 4 && j < 5)    //For printing the last line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == (5-(i+1)) && i != 4)   //For Printing the First Characters.
+            {
+                cout << "1";
+            }
+
+            else if(j == (4+i) && i > 0 && i != 4)   //For Printing the Last Characters.
+            {
+                cout << (i+1);
+            }
+
+            else{
+                cout << " ";        //For printing the space infront and for creating the hollow inside.
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// using While-Loop
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0; 
+    while(i < 5)
+    {
+        int j = 0;
+        while(j < 9)
+        {
+            if(j < 5 && i == 4)        //For Printing Last Line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == (5-(i+1)) && i != 4)       //For Printing the First Characters.
+            {
+                cout << "1";
+            }
+
+            else if(j == (4+i) && i > 0 && i != 4)       //For Printing the Last Characters.
+            {
+                cout << (i+1);
+            }
+
+            else{               //For Printing the Space infront and creating hollow inside of the pyramid.
+                cout << " ";
+            }
             j++;
         }
         i++;
