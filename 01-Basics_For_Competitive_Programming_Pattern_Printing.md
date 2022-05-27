@@ -16,6 +16,8 @@
 <a href = "#16">Program-16</a> <br>
 <a href = "#17">Program-17</a> <br>
 <a href = "#18">Program-18</a> <br>
+<a href = "#19">Program-19</a> <br>
+<a href = "#20">Program-20</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -1053,7 +1055,7 @@ int main()
 }
 ```
 
-<h2 id = "18">Program-19</h2>
+<h2 id = "19">Program-19</h2>
 
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-19.png)
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-19.1.png)
@@ -1124,6 +1126,52 @@ int main()
                 cout << " ";
             }
 
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "20">Program-20</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-20.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int  i = 1; i <= 5; i++)
+    {
+        int k = i;
+        for(int  j = 1; j <= i; j++)
+        {
+            cout << k++ << " ";
+        }
+       
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int  i = 1;
+    while(i <= 5)
+    {
+        int  k = i;
+        int  j = 1;
+        while(j <= i)
+        {
+            cout << k++ << " ";
             j++;
         }
         i++;
