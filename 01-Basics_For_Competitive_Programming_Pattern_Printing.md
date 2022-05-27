@@ -11,6 +11,7 @@
 <a href = "#11">Program-11</a> <br>
 <a href = "#12">Program-12</a> <br>
 <a href = "#13">Program-13</a> <br>
+<a href = "#14">Program-14</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -716,4 +717,87 @@ int main()
     }
     return 0;
 }
+```
+<h2 id = "14">Program-14</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-14.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-14.1.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 9; j++)
+        {
+
+                if( j < 5 && i == 4)          //for printing the last line only
+                {
+                    cout << "* ";
+                }
+
+                else if(j == (5-(i+1)) && i < 4)         //For Printing the first line and first stars
+                {
+                    cout << "*";
+                }
+
+                else if(j == (4+i) && i > 0 && i != 4){  //for printing the last stars 
+                    cout << "*";                   
+                }
+                       
+
+                else{
+                    cout << " ";            //For Printing the spaces in front and creating hollow inside the pyramid
+                }
+            }
+        
+        cout << endl;
+    }
+    return 0;
+}
+
+// Uing While-Loop
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int  i = 0;
+    while(i < 5)
+    {
+        int j = 0;
+        while(j < 9)
+        {
+            if(j < 5 && i == 4)     //For Printing the Last line only.
+            {
+                cout << "* ";
+            }
+
+            else if(j == (5-(i+1))&& i < 4)   //For Printing the first line and first stars.
+            {
+                cout << "*";
+            }
+
+            else if(j == (4+i) && i > 0 && i != 4)      //For printing the last stars.
+            {
+                cout << "*";
+            }
+
+            else{                   //For printing the spaces in front and in the hollow space inside the pyramid.
+                cout << " ";
+            }
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+
+
 ```
