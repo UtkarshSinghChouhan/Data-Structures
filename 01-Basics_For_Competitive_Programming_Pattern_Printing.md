@@ -12,6 +12,7 @@
 <a href = "#12">Program-12</a> <br>
 <a href = "#13">Program-13</a> <br>
 <a href = "#14">Program-14</a> <br>
+<a href = "#15">Program-15</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -800,4 +801,94 @@ int main()
 }
 
 
+```
+
+
+<h2 id = "15">Program-15</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-15.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < i; j++)
+        {
+            cout << (j+1) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    while(i < 5)
+    {
+        int j = 0;
+        while(j < i+1)
+        {
+            cout << (j+1) << " ";
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+<h2 id = "16">Program-16</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-16.png)
+
+```cpp
+// Using the For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < (5-i); j++)
+        {
+            cout << (j+1) << " ";
+        }
+
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using the While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    while(i < 5)
+    {
+        int j = 0;
+        while(j < (5-i))
+        {
+            cout << (j+1) << " ";
+            j++;
+        }
+        i++;
+        cout <<endl;
+    }
+    return 0;
+}
 ```
