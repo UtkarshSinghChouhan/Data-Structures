@@ -1052,3 +1052,83 @@ int main()
     return 0;
 }
 ```
+
+<h2 id = "18">Program-19</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-19.png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-19.1.png)
+
+```cpp
+// Using the For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 9; j++)
+        {
+            if(i == 0 && j < 5)     //For Printing the First Line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == 0 && i > 0)           //For Printing the First characters only.
+            {
+                cout << (i+1);
+            }
+
+            else if(j == (8-(2*i)) &&i > 0 && i != 4)           //For Printing the last characters only.
+            {
+                cout << "5";
+            }
+
+            else{               //For creating hollow space inside the Pyramid
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using the While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int  i = 0;
+    while(i < 5) 
+    {
+        int j = 0 ;
+        while(j < 9)
+        {
+            if(j < 5 && i == 0)            //For Printing the First Line only.
+            {
+                cout << (j+1) << " ";
+            }
+
+            else if(j == 0 && i > 0)       //For Printing the first characters only.
+            {
+                cout << (i+1);
+            }
+
+            else if(j == (8-(2*i)) && i > 0 && i != 4)        //For Printing the Last characters only.
+            {
+                cout << "5";
+            }
+
+            else{               //For creating the hollow space inside the Pyramid.
+                cout << " ";
+            }
+
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
