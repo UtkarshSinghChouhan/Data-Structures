@@ -23,6 +23,7 @@
 <a href = "#23">Program-23</a> <br>
 <a href = "#24">Program-24</a> <br>
 <a href = "#25">Program-25</a> <br>
+<a href = "#26">Program-26</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -1516,14 +1517,14 @@ int main()
     while(i <= 5)
     {
         int j = 1;
-        while(j <= (5-i))
+        while(j <= (5-i))       //For Printing the spaces infront
         {
             cout << " ";
             j++;
         }
 
         int k = 1;
-        while(k <= i)
+        while(k <= i)       //For printing the pyramid
         {
             cout << "* ";
             k++;
@@ -1536,17 +1537,137 @@ int main()
     while(l <= 5)
     {
         int j = 1;
-        while(j < l)
+        while(j < l)            //For Printing the spaces infront.
         {
             cout << " ";
             j++;
         }
 
         int k = 0;
-        while(k <= (5-l))
+        while(k <= (5-l))           //For printing the inverted pyramid.
         {
             cout << "* ";
             k++;
+        }
+        l++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "26">Program-26</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-26.png)
+
+```cpp
+// Using For-Loop
+//HOLLOW DIAMOND PATTERN
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //For Printing the hollow pyramid
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j < 10; j++)
+        {
+
+            if( j == (5- (i - 1)))           //For Printing the First characters only.
+            {
+                cout << "*";
+            }
+
+            else if(i > 1 && j == (5 + (i -1)))           //For Printing the Last characters only.
+            {
+                cout << "*";
+            }
+
+            else{
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    //For Printing the Hollow inverted Pyramid
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j < 10; j++)
+        {
+
+            if( j == i)           //For Printing the First characters only.
+            {
+                cout << "*";
+            }
+
+            else if(i != 5 && j == (10-i))           //For Printing the Last characters only.
+            {
+                cout << "*";
+            }
+
+            else{
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+    return 0;
+}
+
+//Using While loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 1;
+    while(i <= 5)
+    {
+        int j = 1;
+        while(j < 10)
+        {
+            if(j == (5 - (i - 1)))        //For printing the First characters.
+            {
+                cout << "*";
+            }
+
+            else if(j == (5 + (i - 1)) && i > 1)           // For printing the Last characters.
+            {
+                cout << "*";
+            }
+
+            else{
+                 cout << " ";
+            }
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    
+    int l = 1;
+    while(l <= 5)
+    {
+        int j = 1;
+        while(j < 10)
+        {
+            if(j == l)        //For printing the First characters.
+            {
+                cout << "*";
+            }
+
+            else if(j == (10 - l) && l != 5)           // For printing the Last characters.
+            {
+                cout << "* ";
+            }
+
+            else{
+                 cout << " ";
+            }
+            j++;
         }
         l++;
         cout << endl;
