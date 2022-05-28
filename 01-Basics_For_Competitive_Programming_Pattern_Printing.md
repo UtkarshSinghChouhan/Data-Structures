@@ -506,6 +506,29 @@ int main()
     return 0;
 }
 
+//Another Approach
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int  j = 1; j < i; j++)         //For Printing the space infront.
+        {
+            cout << " ";
+        }
+
+        for(int k = 0; k <= (5-i); k++)         // For Pritnting the inverted Pyramid.
+        {
+            cout << "* ";
+        }
+       cout <<  endl;
+    }
+
+    return 0;
+}
+
 //Using While-Loop.
 #include<iostream>
 using namespace std;
