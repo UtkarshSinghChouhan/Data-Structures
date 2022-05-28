@@ -22,6 +22,7 @@
 <a href = "#22">Program-22</a> <br>
 <a href = "#23">Program-23</a> <br>
 <a href = "#24">Program-24</a> <br>
+<a href = "#25">Program-25</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -1458,6 +1459,96 @@ int main()
             l--;
         }
         i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "25">Program-25</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-25.png)
+
+```cpp
+// Using For-Loop
+// DIAMOND PATTERN PROGRAM
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= (5-i); j++)     //For Printing spaces infront.
+        {
+            cout << " ";
+        }
+
+        for(int k = 1; k <= i; k++)     //For Printing Pyramid
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j < i; j++)     //For Printing spaces infront.
+        {
+            cout << " ";
+        }
+
+        for(int k = 0; k <= (5-i); k++)         //For Printing inverted pyramid
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 1;
+    while(i <= 5)
+    {
+        int j = 1;
+        while(j <= (5-i))
+        {
+            cout << " ";
+            j++;
+        }
+
+        int k = 1;
+        while(k <= i)
+        {
+            cout << "* ";
+            k++;
+        }
+        i++;
+        cout << endl;
+    }
+
+    int l = 1;
+    while(l <= 5)
+    {
+        int j = 1;
+        while(j < l)
+        {
+            cout << " ";
+            j++;
+        }
+
+        int k = 0;
+        while(k <= (5-l))
+        {
+            cout << "* ";
+            k++;
+        }
+        l++;
         cout << endl;
     }
     return 0;
