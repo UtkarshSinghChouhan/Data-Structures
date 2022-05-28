@@ -18,6 +18,8 @@
 <a href = "#18">Program-18</a> <br>
 <a href = "#19">Program-19</a> <br>
 <a href = "#20">Program-20</a> <br>
+<a href = "#21">Program-21</a> <br>
+<a href = "#22">Program-22</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -1174,6 +1176,138 @@ int main()
             cout << k++ << " ";
             j++;
         }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+<h2 id = "21">Program-21</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-21.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int  i = 1; i <= 5; i++)
+    {
+        int k = i;
+        for(int  j = 1; j <= i; j++)
+        {
+            cout << k++ << " ";
+        }
+
+        for(int l = (k-2) ; l >= i; l--)
+        {
+            cout << l << " ";
+        }
+
+        cout << endl;
+    }
+    return 0;
+}
+
+//Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i  = 1;
+    while(i <= 5)
+    {
+        int k = i;
+        int j = 1;
+        while(j <= i)
+        {
+            cout << k++ << " ";
+            j++;
+        }
+
+        int l = (k-2);
+        while(l >= i)
+        {
+            cout << l << " ";
+            l--;
+        }
+        i++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "22">Program-22</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-22.png)
+
+```cpp
+// Using the For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 1; i <= 5; i++)
+    {
+        int  k = i;
+
+        for(int j = 1; j <= (5-i); j++)    //For Printing the space infront.
+        {
+            cout << "  ";       //Note that two spaces is provided here to make the pyramid symmetrical.
+        }
+
+        for(int l = 1; l <= i; l++)                 //For Printing the  half pyramid
+        {
+            cout << k++ << " ";
+        }
+
+        for(int m = (k-2); m >= i; m--)         //For printing the reverse half of the pyramid.
+        {
+            cout << m << " ";
+        }   
+       
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int  i = 1;
+    while(i <= 5)
+    {
+        int  k = i;
+
+        int j = 1;
+        while(j <= (5-i))           //For Printing the spaces infront.
+        {
+            cout << "  ";
+            j++;
+        }
+
+        int l = 1;
+        while(l <= i)           //For Printing the first half of the Pyramid.
+        {
+            cout << k++ << " ";
+            l++;
+        }
+
+        int m = (k-2);
+        while(m >= i)
+        {
+            cout << m << " ";
+            m--;
+        }
+
         i++;
         cout << endl;
     }
