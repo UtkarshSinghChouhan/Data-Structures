@@ -26,6 +26,7 @@
 <a href = "#26">Program-26</a> <br>
 <a href = "#27">Program-27</a> <br>
 <a href = "#28">Program-28</a> <br>
+<a href = "#29">Program-29</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -1474,8 +1475,9 @@ int main()
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-25.png)
 
 ```cpp
-// Using For-Loop
 // DIAMOND PATTERN PROGRAM
+
+// Using For-Loop
 #include<iostream>
 using namespace std;
 
@@ -1564,8 +1566,9 @@ int main()
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-26.png)
 
 ```cpp
-// Using For-Loop
 //HOLLOW DIAMOND PATTERN
+
+// Using For-Loop
 #include<iostream>
 using namespace std;
 
@@ -1684,8 +1687,9 @@ int main()
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-27.png)
 
 ```cpp
-// Using For-Loop
 //SOLID HALF DIAMOND
+
+// Using For-Loop
 #include<iostream>
 using namespace std;
 
@@ -1805,6 +1809,74 @@ int main()
         {
             cout << "* ";
         }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+<h2 id = "29">Program-29</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-29.png)
+
+```cpp
+// BUTTERFLY PATTERN PROGRAM
+
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //For Printing the Upper Pattern.
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= i; j++)     //For Printing the first upper half of the pattern.
+        {
+            cout << "* ";
+        }
+
+        for(int k = 1; k <= (5 - i); k++)       //For Printing the first half of the hollow Pattern Inside.
+        {
+            cout << "  ";   //Note that two spaces are provided here.
+        }
+
+        for(int l = 1; l <= (5 - i); l++)       //For Printing the first half of the hollow Pattern Inside.
+        {
+            cout << "  ";       //Note that two spaces are provied here.
+        }
+
+        for(int m = 1; m <= i; m++)     //For Printing the Second Upper Half of the pattern.
+        {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+
+    //For Printing the Lower Pattern
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= (5 - (i - 1)); j++)     //For Printing the first lower half of the pattern.
+        {
+            cout << "* ";
+        }
+
+        for(int k = 1; k < i; k++)      //For Printing the first half of the hollow Pattern Inside.
+        {
+            cout << "  ";           //Note that two spaces are provied here.
+        }
+
+        for(int l = 1; l < i; l++)      //For Printing the first half of the hollow Pattern Inside.
+        {
+            cout << "  ";           //Note that two spaces are provied here.
+        }
+
+        for(int m = 1; m <= (5 - (i - 1)); m++)     //For Printing the second lower half of the pattern.
+        {
+            cout << "* ";
+        }
+
         cout << endl;
     }
     return 0;
