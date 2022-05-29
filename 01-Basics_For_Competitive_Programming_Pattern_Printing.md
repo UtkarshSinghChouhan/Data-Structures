@@ -24,6 +24,8 @@
 <a href = "#24">Program-24</a> <br>
 <a href = "#25">Program-25</a> <br>
 <a href = "#26">Program-26</a> <br>
+<a href = "#27">Program-27</a> <br>
+<a href = "#28">Program-28</a> <br>
 
 <h2 id = "01">Program-01</h2>
 
@@ -280,6 +282,8 @@ int main()
 ![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-06.png)
 
 ```cpp
+//FLOYD'S TRIANGLE.
+
 //Using For-Loop.
 #include<iostream>
 using namespace std;
@@ -1670,6 +1674,137 @@ int main()
             j++;
         }
         l++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "27">Program-27</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-27.png)
+
+```cpp
+// Using For-Loop
+//SOLID HALF DIAMOND
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    for(int i = 1; i <= 5; i++)         //For Printing the Upper half Pyramid
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    for(int i = 1; i <= 5; i++)             //For Printing the lower inverted half pyramid
+    {
+        for(int j = 1; j <= (5 - i); j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+// Using the While-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i = 1;
+    while(i <= 5)
+    {
+        int j = 1;
+        while(j <= i)       //For Printing the Upper half pyramid.
+        {
+            cout << "* ";
+            j++;
+        }
+
+        
+        i++;
+        cout << endl;
+    }
+    int l = 1;
+    while(l <= 5)
+    {
+        int k = 1;
+        while(k <= (5-l))       //For Printing the lower half inverted pyramid.
+        {
+            cout << "* ";
+            k++;
+        }        
+        l++;
+        cout << endl;
+    }
+    return 0;
+}
+```
+<h2 id = "28">Program-28</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-28.png)
+
+```cpp
+// Using For-Loop
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //For the upper half
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= (5 - (i - 1)); j++)
+        {
+            cout << "* ";
+        }
+
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "  ";   //Two Spaces are provided here
+        }
+
+        for(int l = 1; l <= (i-1); l++)
+        {
+            cout << "  ";   //Two Spaces are provided here
+        }
+
+        for(int l = 1; l <= (5 - (i - 1)); l++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+
+    //For the Lower half
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << "* ";
+        }
+
+        for(int k = 1; k <= (5 - (i - 1)); k++)
+        {
+            cout << "  ";   //Two Spaces are provided here
+        }
+
+        for(int l = 1; l <= (5 - i); l++)
+        {
+            cout << "  ";   //Two Spaces are provided here
+        }
+
+        for(int l = 1; l <= i; l++)
+        {
+            cout << "* ";
+        }
         cout << endl;
     }
     return 0;

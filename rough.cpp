@@ -1,4 +1,4 @@
-//SOLID HALF DIAMOND
+// BUTTERFLY PROGRAM
 #include<iostream>
 using namespace std;
 
