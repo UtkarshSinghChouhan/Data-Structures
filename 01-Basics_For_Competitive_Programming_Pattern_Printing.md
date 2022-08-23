@@ -27,6 +27,8 @@
 <a href = "#27">Program-27</a> <br>
 <a href = "#28">Program-28</a> <br>
 <a href = "#29">Program-29</a> <br>
+<a href = "#30">Program-30(Pep-Coding)</a> <br>
+
 
 <h2 id = "01">Program-01</h2>
 
@@ -1881,4 +1883,45 @@ int main()
     }
     return 0;
 }
+```
+
+<h2 id = "30">Program-30(Pep-Coding)</h2>
+
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-30(Pep-Coding).png)
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(){
+        
+    int n;
+    cin >> n;
+
+    int st = 3, sp = 2;
+    
+    for(int i = 1; i <= n; i++){
+
+        for(int j = 1; j <= st; j++){
+            cout << "* ";
+        }
+        for(int i = 1; i <= sp; i++){
+            cout << "  ";
+        }
+        for(int j = 1; j <= st; j++){
+            cout << "* ";
+        }
+
+        if(i <= n/2){
+            st--;
+            sp += 2;
+        }else{
+            st++;
+            sp -= 2;
+        }
+
+        cout << endl;
+    }
+    
+}
+
 ```
