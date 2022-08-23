@@ -1887,7 +1887,7 @@ int main()
 
 <h2 id = "30">Program-30(Pep-Coding)</h2>
 
-![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-30(Pep-Coding).png)
+![alt text](./Images/Basics_For_Competitive_Programming_Images/Program-30-Pep-Coding.png)
 
 ```cpp
 #include<iostream>
